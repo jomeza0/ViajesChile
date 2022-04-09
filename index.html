@@ -30,8 +30,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-trans navbar-default fixed-top">
         <div class="container test">
           <a class="navbar-brand ms-3 ms-md-5" href="#" style="font-size: 1.5em;"> <img src="assets/img/viajes.svg" alt="Logo" class="logo-inicio me-1">Viajes Chile</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon ms-auto"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
@@ -54,7 +54,33 @@
 
     <!-- foto-carrusel -->
     <header id="inicio" class="bg-dark">
-      <img src="assets/img/carousel1.jpg" alt="">
+      <!-- <img src="assets/img/carousel1.jpg" alt=""> -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="carousel1">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="carousel2">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="carousel3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </header>
 
     <!-- Presentacion - texto 3 solumnas -->
@@ -62,9 +88,47 @@
         <h2>¿QUIENES SOMOS?</h2>
     </section>
 
-    <!-- Destacados - fotos-cardlist -->
-    <Section id="destacados">
+    <!-- Destacados - fotos-cardlist - desaparece -->
+    <Section id="destacados" class="text-center d-none d-md-block">
         <h2>DESTACADOS</h2>
+        <div class="row row-cols-4 row-cols-md-4 g-4 mx-1">
+          <div class="col">
+            <div class="card h-100">
+              <img src="assets/img/card1.jpg" class="card-img-top" alt="card1">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="assets/img/card2.jpg" class="card-img-top" alt="card2">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a short card.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="assets/img/card3.jpg" class="card-img-top" alt="card3">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="assets/img/card4.jpg" class="card-img-top" alt="card4">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
     </Section>
 
     <!-- Formulario de Contacto-->
@@ -83,7 +147,7 @@
           <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary mx-5">Enviar</button>
+        <button type="submit" class="btn btn-primary mx-5 bg-aqua">Enviar</button>
       </form>
     </section>
 
