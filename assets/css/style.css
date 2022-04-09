@@ -17,7 +17,6 @@ body {
     margin: 0;
 }
 
-
 .bg-trans {
     background: rgba(0, 0, 0, 0);
 }
@@ -36,16 +35,21 @@ body {
 
 #destacados img {
     height: 9em;
+    
+}
+
+
+
+#destacados .card {
+    max-width: 20em;
+    min-height: 10em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #quienes-somos .sm-icons{
     background: rgba(13, 202, 240, 1);
 }
-
-
-/* .sm-icon {
-    padding: 0;
-} */
 
 .sm-icons i {
     color: white;

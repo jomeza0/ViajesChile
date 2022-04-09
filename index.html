@@ -28,10 +28,10 @@
   <div class="main-container">
     <!-- Barra navegacion - fondo transparente -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-trans navbar-default fixed-top">
-        <div class="container test">
+        <div class="container-fluid">
           <a class="navbar-brand ms-3 ms-md-5" href="#" style="font-size: 1.5em;"> <img src="assets/img/viajes.svg" alt="Logo" class="logo-inicio me-1">Viajes Chile</a>
-          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon ms-auto"></span>
+          <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon ms-auto float-end"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
@@ -54,7 +54,6 @@
 
     <!-- foto-carrusel -->
     <header id="inicio" class="bg-dark">
-      <!-- <img src="assets/img/carousel1.jpg" alt=""> -->
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -83,35 +82,37 @@
       </div>
     </header>
 
-    <!-- Presentacion - texto 3 solumnas -->
-    <section id="quienes-somos" class="my-5">
+    <!-- Presentacion - texto 3 solumnas - desaparece -->
+    <section id="quienes-somos" class="my-5 d-none d-md-block">
         <h2 class="text-center">¿QUIENES SOMOS?</h2>
         <div class="container-fluid">
           <div class="row mx-4">
             <div class="col">
               <div class="text-center sm-icons"><i class="fa-solid fa-plane"></i></div>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate esse minima et consectetur quo hic odio, accusantium eaque sint inventore iusto praesentium facilis. Saepe quas assumenda hic exercitationem eos quaerat.
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate esse minima et consectetur quo hic odio, accusantium eaque sint inventore iusto praesentium facilis. Saepe quas assumenda hic exercitationem eos quaerat.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam rem asperiores aperiam in, culpa, dolores dicta iusto exercitationem corrupti magni voluptas ex molestias. Ex repellendus vero iste, doloribus officia similique.</p>
             </div>
             <div class="col">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique tempora excepturi, rerum quia voluptas eius perferendis dolorem non dolore minima. Fugiat quasi fugit dignissimos placeat delectus porro id repudiandae cupiditate?
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique tempora excepturi, rerum quia voluptas eius perferendis dolorem non dolore minima. Fugiat quasi fugit dignissimos placeat delectus porro id repudiandae cupiditate?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repellendus error inventore! Impedit recusandae explicabo saepe voluptate quam autem voluptatibus tempore deleniti, doloribus tempora a sit et laboriosam veniam nemo?</p>
               <div class="text-center sm-icons"><i class="fa-solid fa-mountain"></i></div>
             </div>
             <div class="col">
               <div class="text-center sm-icons"><i class="fa-solid fa-route"></i></div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi recusandae odio perferendis architecto, quidem sapiente dignissimos facilis dolore soluta molestias dolores aperiam, sit nam voluptas accusamus, nemo officiis molestiae quos.
-              3 of 3
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi recusandae odio perferendis architecto, quidem sapiente dignissimos facilis dolore soluta molestias dolores aperiam, sit nam voluptas accusamus, nemo officiis molestiae quos.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. A dolores corporis inventore? Eum, magnam ab! Dignissimos molestias commodi excepturi numquam dolor molestiae blanditiis consectetur necessitatibus, vitae quam quas perspiciatis. Placeat.</p>
             </div>
           </div>
         </div>
 
     </section>
 
-    <!-- Destacados - fotos-cardlist - desaparece -->
-    <Section id="destacados" class="text-center d-none d-md-block">
+    <!-- Destacados - fotos-cardlist -->
+    <Section id="destacados" class="text-center ">
         <h2>DESTACADOS</h2>
-        <div class="row row-cols-4 row-cols-md-4 g-4 mx-1">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 mx-1 align-content-center" >
           <div class="col">
-            <div class="card h-100">
+            <div class="card h-100 w-100">
               <img src="assets/img/card1.jpg" class="card-img-top" alt="card1">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -120,7 +121,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card h-100">
+            <div class="card h-100 w-100">
               <img src="assets/img/card2.jpg" class="card-img-top" alt="card2">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -128,8 +129,8 @@
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100">
+          <div class="col ">
+            <div class="card h-100 w-100">
               <img src="assets/img/card3.jpg" class="card-img-top" alt="card3">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -138,7 +139,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card h-100">
+            <div class="card h-100 w-100">
               <img src="assets/img/card4.jpg" class="card-img-top" alt="card4">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
