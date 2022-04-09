@@ -33,18 +33,18 @@
           <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon ms-auto float-end"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse mx-3" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
+              <li class="nav-item ms-3">
                 <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item ms-3">
                 <a class="nav-link" href="#quienes-somos">Quienes Somos</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item ms-3">
                 <a class="nav-link" href="#destacados">Destacados</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item ms-3">
                 <a class="nav-link" href="#contacto">Contacto</a>
               </li>
             </ul>
@@ -110,7 +110,7 @@
     <!-- Destacados - fotos-cardlist -->
     <Section id="destacados" class="text-center ">
         <h2>DESTACADOS</h2>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 mx-1 align-content-center" >
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 mx-1" >
           <div class="col">
             <div class="card h-100 w-100">
               <img src="assets/img/card1.jpg" class="card-img-top" alt="card1">
@@ -166,22 +166,45 @@
           <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary mx-5 bg-aqua">Enviar</button>
+        <button type="submit" class="btn btn-primary mx-5 bg-aqua " data-bs-toggle="tooltip" data-bs-placement="bottom" data-toggle="modal" data-target="#exampleModalCenter" title="Presiona para enviar a tu mensaje"><a data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</a>
+        </button>
       </form>
+     
+    
     </section>
+
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">¡Atención!</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                El correo fue enviado correctamente...
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-primary bg-aqua" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+          </div>
+      </div>
+    </div>
 
     <!-- Footer - Redes Sociales -->
     <footer class="bg-aqua py-3 align-middle text-center">
       <div class="row text-center cols-1 cols-sm-12 no-gutters">
         <div class="logo-footer mx-sm-5 cols-1 col-sm-5">
-          <p class="p-footer">VIAJES CHILE</p>
+          <a href="#inicio"><p class="p-footer">VIAJES CHILE</p></a>
+          
         </div>
         <div class="sm-icon ms-auto col-sm-5">
           <div class="row no-gutters">
-            <div id="github" class="sm-icons cols-1 col-sm-1 mx-2"><a class="nav-link" aria-current="page" href="#github"><i class="fa-brands fa-github-square fa-2x"></i></a></div>
-            <div id="linkedin" class="sm-icons cols-1 col-sm-1 mx-2"><a class="nav-link" href="#linkedin"><i class="fa-brands fa-linkedin fa-2x"></i></a></div>
-            <div id="twitter" class="sm-icons cols-1 col-sm-1 mx-2"><a class="nav-link" href="#destacados"><i class="fa-brands fa-twitter-square fa-2x"></i></a></div>
-            <div id="facebook" class="sm-icons cols-1 col-sm-1 mx-2"><a class="nav-link" href="#facebook"><i class="fa-brands fa-facebook-square fa-2x"></i></a></div>
+            <div id="github" class="sm-icons cols-1 col-sm-1 mx-2"><a class="nav-link" aria-current="page" href="https://www.github.com" target="_blank"><i class="fa-brands fa-github-square fa-2x"></i></a></div>
+            <div id="linkedin" class="sm-icons cols-1 col-sm-1 mx-2"><a class="nav-link" href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a></div>
+            <div id="twitter" class="sm-icons cols-1 col-sm-1 mx-2"><a class="nav-link" href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter-square fa-2x"></i></a></div>
+            <div id="facebook" class="sm-icons cols-1 col-sm-1 mx-2"><a class="nav-link" href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-square fa-2x"></i></a></div>
           </div>
         </div>
       </div>
