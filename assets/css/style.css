@@ -2,8 +2,21 @@
     margin: 0;
     padding: 0;
     border: 0;
+    background: #000000;
 }
 
 .logo-inicio {
     height: 1.4em;
+}
+
+.bg-trans {
+    background: rgba(0, 44, 0, 0);
+}
+
+#inicio img{
+    width: 100vw;
+}
+
+.bg-aqua {
+    background-color: aqua;
 }
