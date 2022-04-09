@@ -27,9 +27,9 @@
 
   <div class="main-container">
     <!-- Barra navegacion - fondo transparente -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-trans navbar-default fixed-top mx-5">
-        <div class="container">
-          <a class="navbar-brand lob" href="#" style="font-size: 1.5em;"> <img src="assets/img/viajes.svg" alt="Logo" class="logo-inicio me-1">Viajes Chile</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-trans navbar-default fixed-top">
+        <div class="container test">
+          <a class="navbar-brand ms-3 ms-md-5" href="#" style="font-size: 1.5em;"> <img src="assets/img/viajes.svg" alt="Logo" class="logo-inicio me-1">Viajes Chile</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -68,22 +68,40 @@
     </Section>
 
     <!-- Formulario de Contacto-->
-    <section id="contacto">
-        <h2>CONTACTO</h2>
+    <section id="contacto" class="my-5">
+      <h2 class="text-center">CONTACTO</h2>
+      <form>
+        <div class="mb-3 mx-5">
+          <label for="formGroupExampleInput" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="formGroupExampleInput">
+        </div>
+        <div class="mb-3 mx-5">
+          <label for="formGroupExampleInput2" class="form-label">Asunto</label>
+          <input type="text" class="form-control" id="formGroupExampleInput2">
+        </div>
+        <div class="mb-3 mx-5">
+          <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary mx-5">Enviar</button>
+      </form>
     </section>
 
     <!-- Footer - Redes Sociales -->
-    <footer class="bg-aqua">
-        <div class="logo-footer">
-            <h1>VIAJES CHILE</h1>
+    <footer class="bg-aqua py-3 align-middle text-center">
+      <div class="row text-center cols-1 cols-sm-12 no-gutters">
+        <div class="logo-footer mx-sm-5 cols-1 col-sm-5">
+          <p class="p-footer">VIAJES CHILE</p>
         </div>
-        <div class="smicons">
-            <i class="fa-brands fa-github-square"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-twitter-square"></i>
-            <i class="fa-brands fa-facebook-square"></i>
+        <div class="sm-icon ms-auto col-sm-5">
+          <div class="row no-gutters">
+            <div id="github" class="sm-icons cols-1 col-sm-1 mx-2"><a class="nav-link" aria-current="page" href="#github"><i class="fa-brands fa-github-square fa-2x"></i></a></div>
+            <div id="linkedin" class="sm-icons cols-1 col-sm-1 mx-2"><a class="nav-link" href="#linkedin"><i class="fa-brands fa-linkedin fa-2x"></i></a></div>
+            <div id="twitter" class="sm-icons cols-1 col-sm-1 mx-2"><a class="nav-link" href="#destacados"><i class="fa-brands fa-twitter-square fa-2x"></i></a></div>
+            <div id="facebook" class="sm-icons cols-1 col-sm-1 mx-2"><a class="nav-link" href="#facebook"><i class="fa-brands fa-facebook-square fa-2x"></i></a></div>
+          </div>
         </div>
-
+      </div>
     </footer>
 
   </div>
