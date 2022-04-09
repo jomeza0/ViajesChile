@@ -38,12 +38,16 @@ body {
     height: 9em;
 }
 
+#quienes-somos .sm-icons{
+    background: rgba(13, 202, 240, 1);
+}
+
 
 /* .sm-icon {
     padding: 0;
 } */
 
-.sm-icons i{
+.sm-icons i {
     color: white;
 }
 
